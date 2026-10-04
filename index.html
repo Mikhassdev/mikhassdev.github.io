@@ -7,7 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- title y description son lo que Google muestra en los resultados de búsqueda -->
   <title>Miguel Jorquera | Desarrollador Web</title>
-  <meta name="description" content="Portafolio de Miguel Jorquera (Mikhassdev), Analista Programador y estudiante de Ingeniería en Informática en Chile.">
+  <meta name="description" content="Portafolio de Miguel Jorquera (Mikhassdev), Analista Programador y estudiante de Ingeniería en Informática en Alto Hospicio, Chile.">
+
+  <!-- Open Graph: controla la vista previa al compartir el enlace en LinkedIn o WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikhassdev.github.io/">
+  <meta property="og:title" content="Miguel Jorquera | Desarrollador Web">
+  <meta property="og:description" content="Analista Programador y estudiante de Ingeniería en Informática. Alto Hospicio, Chile.">
+
+  <!-- Favicon: el ícono de la pestaña. Es un SVG escrito directamente aquí, sin archivo aparte -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232563eb'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Segoe UI,Arial,sans-serif' font-size='30' font-weight='700' fill='white'>MJ</text></svg>">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -29,6 +39,7 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
@@ -45,8 +56,13 @@
           Analista Programador y estudiante de Ingeniería en Informática.
           Construyo sitios web simples, rápidos y fáciles de mantener.
         </p>
+        <p class="hero__meta">
+          <span>Alto Hospicio, Tarapacá</span>
+          <span>Disponible: presencial, remoto o turnos</span>
+        </p>
         <div class="hero__actions">
           <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="https://www.linkedin.com/in/miguel-angel-jorquera-marin-4026ba400/" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/Mikhassdev" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
@@ -56,13 +72,15 @@
       <div class="container">
         <h2 class="section__title">Sobre mí</h2>
         <p>
-          Soy Analista Programador titulado y actualmente curso la continuidad de estudios
-          en Ingeniería en Informática en Chile. Me interesa el desarrollo web y la nube,
+          Soy Analista Programador titulado de INACAP y actualmente curso la continuidad
+          de estudios en Ingeniería en Informática. Me interesa el desarrollo web y la nube,
           y me estoy preparando para la certificación Microsoft Azure Fundamentals (AZ-900).
         </p>
         <p>
-          Este portafolio es mi primer proyecto público: lo construyo desde cero con HTML,
-          CSS y JavaScript, sin frameworks, para dominar las bases.
+          Antes de dedicarme a TI trabajé en operaciones en faena minera, en retail y en
+          atención de público, incluyendo supervisión de equipos y capacitación de personal.
+          De esa experiencia traigo disciplina operativa, trabajo bajo normas de seguridad
+          y trato directo con clientes.
         </p>
       </div>
     </section>
@@ -70,12 +88,24 @@
     <section id="habilidades" class="section section--alt">
       <div class="container">
         <h2 class="section__title">Habilidades</h2>
-        <!-- PENDIENTE: agregar solo tecnologías que puedas defender en una entrevista -->
+
+        <h3 class="subhead">Uso actual</h3>
         <ul class="tags">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>Git y GitHub</li>
+        </ul>
+
+        <!-- Separar por nivel de uso es más honesto que una lista plana o barras de porcentaje -->
+        <h3 class="subhead">Usadas en proyectos académicos</h3>
+        <ul class="tags tags--muted">
+          <li>Python</li>
+          <li>Django</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Docker</li>
+          <li>Modelado de bases de datos relacionales</li>
         </ul>
       </div>
     </section>
@@ -85,23 +115,55 @@
         <h2 class="section__title">Proyectos</h2>
         <div class="cards">
           <article class="card">
-            <h3 class="card__title">Este portafolio</h3>
-            <p>Sitio personal responsivo, construido con HTML, CSS y JavaScript puro.</p>
+            <h3 class="card__title">Este sitio</h3>
+            <p>Sitio personal responsivo con modo oscuro, construido con HTML, CSS y JavaScript sin frameworks. Publicado con GitHub Pages.</p>
             <a href="https://github.com/Mikhassdev/mikhassdev.github.io" target="_blank" rel="noopener">Ver código</a>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Estudio AZ-900</h3>
+            <p>Apuntes, puntos débiles y preguntas de práctica para la certificación Microsoft Azure Fundamentals.</p>
+            <a href="https://github.com/Mikhassdev/az-900-estudio" target="_blank" rel="noopener">Ver repositorio</a>
           </article>
           <article class="card card--soon">
             <h3 class="card__title">Próximamente</h3>
-            <p>Rediseño web para un negocio local.</p>
+            <p>HealthPoint: sistema web en Django para control de insumos médicos.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="section section--alt">
+    <section id="formacion" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Formación</h2>
+        <ul class="timeline">
+          <li>
+            <h3>Ingeniería en Informática</h3>
+            <p>INACAP, sede Iquique · En curso</p>
+          </li>
+          <li>
+            <h3>Analista Programador</h3>
+            <p>INACAP, sede Iquique · Titulado, 2026</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Certificaciones e idiomas</h3>
+        <ul class="list">
+          <li>Microsoft Azure Fundamentals (AZ-900) · en preparación</li>
+          <li>Git y GitHub · Edutin Academy</li>
+          <li>Docker · Edutin Academy</li>
+          <li>Inglés intermedio · certificación TOEIC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
       <div class="container">
         <h2 class="section__title">Contacto</h2>
-        <p>¿Tienes un proyecto o una oportunidad? Escríbeme por GitHub.</p>
-        <a href="https://github.com/Mikhassdev" class="btn btn--primary" target="_blank" rel="noopener">github.com/Mikhassdev</a>
+        <p>¿Tienes una oportunidad laboral o un proyecto? Escríbeme.</p>
+        <div class="hero__actions">
+          <a href="mailto:miguel.jorquera.ma.angel@gmail.com" class="btn btn--primary">Enviar correo</a>
+          <a href="https://www.linkedin.com/in/miguel-angel-jorquera-marin-4026ba400/" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
       </div>
     </section>
   </main>
