@@ -138,10 +138,16 @@ a {
 }
 
 .hero__title {
-  margin: 4px 0 16px;
+  margin: 4px 0 4px;
   /* clamp(mínimo, ideal, máximo): el tamaño se adapta al ancho de pantalla */
   font-size: clamp(2.5rem, 8vw, 4rem);
   line-height: 1.1;
+}
+
+.hero__alias {
+  margin: 0 0 20px;
+  font-family: ui-monospace, Consolas, monospace;
+  color: var(--color-muted);
 }
 
 .hero__subtitle {

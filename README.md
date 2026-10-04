@@ -1,4 +1,4 @@
-# Portafolio — Mikhassdev
+# Miguel Jorquera — Sitio personal
 
 Sitio personal construido con HTML, CSS y JavaScript, sin frameworks.
 
