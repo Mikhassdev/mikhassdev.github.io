@@ -16,6 +16,6 @@ Abre `index.html` en el navegador.
 
 ## Próximos pasos
 
-- [ ] Publicar en GitHub Pages
+- [x] Publicar en GitHub Pages: https://mikhassdev.github.io
 - [ ] Agregar proyecto: rediseño web para un negocio local
 - [ ] Migrar a Azure Static Web Apps
